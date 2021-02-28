@@ -1,0 +1,6 @@
+kafka-consumer-groups -describe --group transacoes --bootstrap-server localhost:9092
+
+kafka-consumer-groups --list --bootstrap-server localhost:9092
+
+kafka-topics --list --bootstrap-server localhost:9092
+

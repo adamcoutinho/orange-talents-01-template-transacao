@@ -1,14 +1,13 @@
-package br.com.zup.transactions;
+package br.com.zup.transacoes;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TransactionsApplicationTests {
+class TransacoesApplicationTests {
 
 	@Test
 	void contextLoads() {
-		
 	}
 
 }

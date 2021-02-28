@@ -1,13 +1,13 @@
-package br.com.zup.transactions;
+package br.com.zup.transacoes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TransactionsApplication {
+public class TransacoesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TransactionsApplication.class, args);
+		SpringApplication.run(TransacoesApplication.class, args);
 	}
 
 }
