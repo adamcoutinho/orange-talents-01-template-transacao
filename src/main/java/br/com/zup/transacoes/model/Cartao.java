@@ -14,6 +14,10 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "cartao")
 public class Cartao {
+    @Deprecated
+    public Cartao() {
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE ,generator = "sequence_cartao")
     @SequenceGenerator(name = "sequence_cartao",sequenceName = "sq_cartao",allocationSize = 1)
