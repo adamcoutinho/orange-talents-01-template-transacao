@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -26,15 +28,18 @@ public class Transacao {
     @SequenceGenerator(name = "sequence_transacao",sequenceName = "sq_transacao",allocationSize = 1)
     private Long id;
 
+    @NotBlank
     private String uuid;
 
-
+    @NotNull
     private BigDecimal valor;
 
     @OneToOne(cascade = CascadeType.PERSIST)
+    @NotNull
     private Estabelecimento estabelecimento;
 
     @OneToOne(cascade = CascadeType.PERSIST)
+    @NotNull
     private Cartao cartao;
 
     private LocalDateTime efetivadaEm;
